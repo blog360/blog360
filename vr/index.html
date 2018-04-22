@@ -1,22 +1,49 @@
 <html>
-  <head>
-    <title>Blog360</title>
-    <style>body { margin: 0; }</style>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  </head>
-  <body>
-    <!-- When you're ready to deploy your app, update this line to point to your compiled client.bundle.js -->
-    <script src="./client.bundle?platform=vr"></script>
-    <script>
-      // Initialize the React VR application
-      ReactVR.init(
-        // When you're ready to deploy your app, update this line to point to
-        // your compiled index.bundle.js
-        '../index.vr.bundle?platform=vr&dev=true',
-        // Attach it to the body tag
-        document.body
-      );
-    </script>
-  </body>
-</html>
 
+<head>
+  <title>Blog360</title>
+  <style>
+    body {
+      margin: 0;
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+
+<body>
+  <!-- When you're ready to deploy your app, update this line to point to your compiled client.bundle.js -->
+  <script src="../index.vr.bundle?platform=vr&dev=true"></script>
+  <script>
+    // Initialize the React VR application
+    ReactVR.init(
+      // When you're ready to deploy your app, update this line to point to
+      // your compiled index.bundle.js
+      '../index.vr.bundle?platform=vr&dev=true',
+      // Attach it to the body tag
+      document.body,
+      ['./static_assets/berlin_thumbnail.jpg',
+        './static_assets/berlin.JPG',
+        './static_assets/berlin5_thumbnail.jpg',
+        './static_assets/berlin5.JPG',
+        './static_assets/dresden_thumbnail.jpg',
+        './static_assets/dresden.JPG',
+        './static_assets/dresden1_thumbnail.jpg',
+        './static_assets/dresden1.JPG',
+        './static_assets/dresden4_thumbnail.jpg',
+        './static_assets/dresden4.JPG',
+        './static_assets/oakland_thumbnail.jpg',
+        './static_assets/oakland.JPG',
+        './static_assets/prague2_thumbnail.jpg',
+        './static_assets/prague2.JPG',
+        './static_assets/pragueCastle_thumbnail.jpg',
+        './static_assets/pragueCastle.JPG',
+        './static_assets/seattle_thumbnail.jpg',
+        './static_assets/seattle.JPG',
+        './static_assets/seattle3_thumbnail.jpg',
+        './static_assets/seattle3.JPG',
+      ]
+    );
+  </script>
+</body>
+
+</html>

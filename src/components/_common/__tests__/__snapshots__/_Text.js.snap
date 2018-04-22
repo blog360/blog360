@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`_Text renders a _Text component 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  isOnLayer={false}
+  style={undefined}
+/>
+`;
+
+exports[`_Text renders a Text component 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  isOnLayer={false}
+  style={undefined}
+/>
+`;
